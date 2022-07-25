@@ -1,4 +1,4 @@
-.exhibit {
+/* .exhibit {
     background-color: #fcfcfc;
     display: flex;
     height: 100vh;
@@ -21,4 +21,46 @@
 
 .exhibit_card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+} */
+
+.Exhibit_Container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E5E4E2;
+    height: 100vh;
+    padding-top: 26px;
+}
+
+.Exhibit_Card {
+    float: left;
+    margin: 0.5vw;
+    padding: 0vw 2vw 0vw 2vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 24vw;
+    height: 24vh;
+    background-color: white;
+}
+
+.Exhibit_Card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+} 
+
+.ExhibitHeading {
+    font-weight: bold;
+    font-size: 1.75vw;
+}
+
+.ExhibitContent {
+    margin: 0.5vw;
+    padding: 1vw 1vw 1vw 1vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.75vw;
+    color: #002933;
+    border: 0.25vw solid #005266;
+    border-radius: 2vw;
 }

@@ -1,16 +1,17 @@
+import React, {Component} from 'react'
 import "./Exhibit.css"
-import React from 'react'
 
-function Exhibit() {
-  return (
-    <div className="exhibit">
-        <div className="exhibit_card"> user's public IP  </div>
-        <div className="exhibit_card"> latency information for Pylon
- </div>
-        <div className="exhibit_card"> Card 3 </div>
-    
-    </div>
-  )
+class Exhibit extends Component {
+  render() {
+      return (
+          <div className="Exhibit_Card">
+              <h2 className="ExhibitHeading">{this.props.name}</h2>
+              <div className="ExhibitContent">
+                  {this.props.children}
+              </div>
+          </div>
+      );
+  }
 }
 
-export default Exhibit
+export default Exhibit;
