@@ -3,7 +3,7 @@ import "./App.css";
 import Banner from "./Banner";
 import Exhibit from "./Exhibit";
 import PublicIP from "./PublicIP";
-import Latency from "./Latency";
+import PylonConnector from "./PylonConnector";
 
 class App extends Component {
   render() {
@@ -22,8 +22,8 @@ class App extends Component {
             <PublicIP apiUrl="https://api64.ipify.org?format=json" />
           </Exhibit>
           
-          <Exhibit name="Pylon Latency" >
-            <Latency />
+          <Exhibit name="Pylon Packet Latency" >
+            <PylonConnector />
           </Exhibit>
         
         </div>

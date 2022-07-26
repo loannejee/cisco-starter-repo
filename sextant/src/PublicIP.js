@@ -19,7 +19,7 @@ class PublicIP extends Component {
     render() {
         return (
             <div className="PublicIP">
-                {this.state.ipAddress}
+                {/* {this.state.ipAddress} */}
             </div>
         );
     }
