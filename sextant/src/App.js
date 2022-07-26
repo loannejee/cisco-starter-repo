@@ -13,7 +13,8 @@ class App extends Component {
         <Banner />
 
         <div className="Exhibit_Container">
-          
+
+          {/* Component should accept a prop that determines whether it requests an ipv4 address or an ipv6 address. */}
           <Exhibit name="Public IPv4 Address">
             <PublicIP apiUrl="https://api.ipify.org?format=json" />
           </Exhibit>
