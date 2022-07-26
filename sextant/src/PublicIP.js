@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 
 class PublicIP extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            ip: ''
+            apiUrl: props.apiUrl,
+            ipAddress: null
         };
     }
 
     componentDidMount() {
-        fetch('https://api64.ipify.org?format=json')
+        fetch(this.state.apiUrl)
             .then((response) => response.json())
             // .then((data) => console.log(data));
-            .then((data) => this.setState({ ...this.state, ip: data.ip }));
+            .then((data) => this.setState({ ...this.state, ipAddress: data.ip }));
     }
 
     render() {
         return (
             <div className="PublicIP">
-                {this.state.ip}
+                {this.state.ipAddress}
             </div>
         );
     }
