@@ -38,7 +38,7 @@
     text-align: center;
     border-radius: 0.5vw;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.3s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 24vw;
     height: 24vh;
@@ -46,7 +46,7 @@
 }
 
 .Exhibit_Card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 10px 8px 8px #049FD9;
 } 
 
 .ExhibitHeading {
