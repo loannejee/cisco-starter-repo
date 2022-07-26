@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Banner";
 import Exhibit from "./Exhibit";
 import PublicIP from "./PublicIP";
+import Latency from "./Latency";
 
 class App extends Component {
   render() {
@@ -21,7 +22,9 @@ class App extends Component {
             <PublicIP apiUrl="https://api64.ipify.org?format=json" />
           </Exhibit>
           
-          <Exhibit name="Exhibit 3" />
+          <Exhibit name="Pylon Latency" >
+            <Latency />
+          </Exhibit>
         
         </div>
       </div>
